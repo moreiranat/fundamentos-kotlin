@@ -12,10 +12,6 @@ fun main() {
 
     val teste: String
     teste = "Teste"
-
-    //não pode fazer isso!
-    var texto = "Texto"
-    texto = 123
 }
 
 class variaveis {
