@@ -6,6 +6,6 @@ fun main() {
 
     val pessoa : Pessoa? = null
 
-    println(pessoa!!.nome) //vai dar uma exception (esta tentando acessar um atributo de um objeto que é nulo)
+//    println(pessoa!!.nome) //vai dar uma exception (esta tentando acessar um atributo de um objeto que é nulo)
     println("Final do código") //não vai imprimir
 }
