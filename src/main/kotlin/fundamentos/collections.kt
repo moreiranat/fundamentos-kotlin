@@ -1,29 +1,31 @@
 package fundamentos
 
 fun main() {
-//    var lista = listOf<Int>() //sem passar os valores, precisa colocar <Int>
-//    var lista1 = listOf(1, 2, 3) //passando os valores, ja infere que é uma lista de Int
-//    var lista3 = listOf<Int?>(1, 2, 3) //pode ter valores nulos
+    var lista = listOf<Int>() //sem passar os valores, precisa colocar <Int>
+    var lista1 = listOf(1, 2, 3) //passando os valores, ja infere que é uma lista de Int
+    var lista3 = listOf<Int?>(1, 2, 3) //pode ter valores nulos
+    var outraLista = listOf(1, 2, 3, 4, 6) //lista nao mutavel (não pode fazer lista.add nem lista.remove)
 
-//    //filtra todos os valores pares
-//    val pares = lista4.filter { it % 2 ==0 } //o filter vai iterar por todos os valores; acessa o registro da vez pelo it
+    //filtra todos os valores pares
+    val pares = outraLista.filter { it % 2 ==0 } //o filter vai iterar por todos os valores; acessa o registro da vez pelo it
 
-//    //vai recuperar o 1º valor que der true e vai parar (só imprime o 2)
-//    val pares = lista4.filter { it % 2 ==0 }.first()
+    //vai recuperar o 1º valor que der true e vai parar (só imprime o 2)
+    val pares1 = outraLista.filter { it % 2 ==0 }.first()
 
-//    //pode pegar o first direto
-//    val pares = lista4.first() //no lugar do first pode ser last
-//
-//    println(pares)
+    val pares2 = outraLista.first() //pode pegar o first direto
+    val pares3 = outraLista.last() //pega o ultimo elemento da lista
+    println(pares)
+    println(pares1)
+    println(pares2)
 
     //para passar por todos os valores de uma lista
-//    lista4.forEach {
-//        println(it) //it --> é para acessar o elemento da vez
-//    }
+    outraLista.forEach {
+        println(it) //it --> é para acessar o elemento da vez
+    }
 
-//    for(numero in lista4) { //para iterar por todos os valores da lista; igual ao forEach
-//        println(numero)
-//    }
+    for(numero in outraLista) { //para iterar por todos os valores da lista; igual ao forEach
+        println(numero)
+    }
 
     var lista4 = listOf(1, 2, 3, 4, 6) //lista nao mutavel (não pode fazer lista.add nem lista.remove)
 

@@ -8,33 +8,33 @@ fun main() {
     //a lista pode ser nula e não pode receber valores nulos, só pode receber valores inteiros
     var listaNullable : List<Int>? = null
 
-//    //a lista pode ser nula e pode receber valores inteiros ou nulos
-//    var listaNullable : List<Int?>? = null
+    //a lista pode ser nula e pode receber valores inteiros ou nulos
+    var listaNullable1 : List<Int?>? = null
 
-//    //Elvis Operator -> Forma de usar 1
-//    var nome : String? = null
-//
-//    var tamanho: Int = nome?.length ?: 0
-//
-//    println(tamanho)
+    //Elvis Operator -> Forma de usar 1
+    var nome : String? = null
 
-/////////////////////////////////////////////////////////////////////////
+    var tamanho: Int = nome?.length ?: 0
 
-//    //Elvis Operator -> Forma de usar 2
-//    var nome : String? = null
-//
-//    var tamanho: Int = nome?.length ?: throw Exception()
-//
-//    println(tamanho)
+    println(tamanho)
 
 /////////////////////////////////////////////////////////////////////////
 
-//    //Elvis Operator -> Forma de usar 3
-//    var nome : String? = null
-//
-//    var tamanho: Int = nome?.length ?: return false
-//
-//    println(tamanho)
+    //Elvis Operator -> Forma de usar 2
+    var outroNome : String? = null
+
+    var outroTamanho: Int = outroNome?.length ?: throw Exception()
+
+    println(outroTamanho)
+
+/////////////////////////////////////////////////////////////////////////
+
+    //Elvis Operator -> Forma de usar 3
+    var maisUmNome : String? = null
+
+    //var maisUmTamanho: Int = maisUmNome?.length ?: return false
+
+    //git println(maisUmTamanho)
 
 /////////////////////////////////////////////////////////////////////////
 
